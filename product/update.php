@@ -47,7 +47,11 @@ $res=cat::select_all();
 echo '<tr>'.'<td>'.'Category:'.'<td>'.'<select name="txtcat">';
 while($row=$res->fetch_assoc())
 {
-echo '<option name="1"  value=" echo $row["cat_id"] ">'.$row["cat_name"] .'</option>';
+echo '<option  value="'.$row["cat_id"].'" ';
+if($_cat==$row["cat_id"]){
+    echo "selected";
+}
+echo '>'.$row["cat_name"] .'</option>';
 }
 echo '</select>';
 ?>
@@ -56,7 +60,7 @@ echo '</select>';
     </div>
     <div class="row">
         <div class="form-group col-ld-10">
-       <tr><td>Enter Id : <td><input type="text" value="<?php echo $_pid ?>" name="txtid" class="form-control" id="text" placeholder="Enter Mobileno" required >
+       <tr><td>Enter Id : <td><input type="text" value="<?php echo $_pid ?>" name="txtid" class="form-control" id="text" disabled="true" >
        </tr><br> </div>
     </div>
     

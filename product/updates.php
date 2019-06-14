@@ -1,7 +1,6 @@
 <?php
 if($_SERVER["REQUEST_METHOD"]=="POST")
 {
-$_pid=$_POST["txtid"];
     $_name=$_POST["txtname"];
     
 $_cat=$_POST["txtcat"];

@@ -44,6 +44,7 @@ class product
     {
         $cnn=product::connect();
         $q="update product_tbl set product_name='". $pname ."', fk_cat_id='". $pcid  ."' where product_id='". $pid ."'";
+        echo $q;
         $result=$cnn->query($q);
         echo $q;
         return $result;
