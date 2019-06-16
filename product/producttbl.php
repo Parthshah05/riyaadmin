@@ -54,7 +54,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <!-- /.navbar-header -->
             <ul class="nav navbar-nav navbar-right">
 						
-						<li class="m_2"><a href="#"><i class="fa fa-lock"></i> Logout</a></li>	
+						<li class="m_2"><a href="../signout.php"><i class="fa fa-lock"></i> Logout</a></li>	
 	        		</ul>
 	      		</li>
 			</ul>

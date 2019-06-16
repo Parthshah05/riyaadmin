@@ -1,4 +1,9 @@
-
+<?php
+    session_start();
+    if(!isset($_SESSION["id"])){
+        header("Location:../index.php");   
+    }
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -38,7 +43,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </div>
          <ul class="nav navbar-nav navbar-right">
 						
-						<li class="m_2"><a href="#"><i class="fa fa-lock"></i> Logout</a></li>	
+						<li class="m_2"><a href="../signout.php"><i class="fa fa-lock"></i> Logout</a></li>	
 	        		</ul>
 	      		</li>
 			</ul>

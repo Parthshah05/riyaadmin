@@ -39,7 +39,7 @@ $_cid=$row["cat_id"];
     </div>
     <div class="row">
         <div class="form-group col-ld-10">
-       <tr><td>Enter Id :     <td><input type="text" value="<?php echo $_cid ?>" name="txtid" class="form-control" id="text" placeholder="Enter id" required >
+       <tr><td>Enter Id :     <td><input type="text" value="<?php echo $_cid ?>" name="txtid" class="form-control" id="text" placeholder="Enter id" disabled="true" >
        </tr><br> </div>
     </div>
    

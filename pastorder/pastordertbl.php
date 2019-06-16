@@ -55,7 +55,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <!-- /.navbar-header -->
             <ul class="nav navbar-nav navbar-right">
 						
-						<li class="m_2"><a href="#"><i class="fa fa-lock"></i> Logout</a></li>	
+						<li class="m_2"><a href="../signout.php"><i class="fa fa-lock"></i> Logout</a></li>	
 	        		</ul>
 	      		</li>
 			</ul>
@@ -101,7 +101,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           <th>Product Qty<span class="glyphicon glyphicon-sort"></span></th>
           <th>Order Date<span class="glyphicon glyphicon-sort"></span></th>
          
-          
+          <th></th>
          
           <th>Action</th>
         </tr>
@@ -121,10 +121,15 @@ $res=past::select_all1();
            echo '<td>'. $row["product_name"] .'</td>';
            echo '<td>'. $row["product_qty"] .'</td>';
            echo '<td>'. $row["order_date"] .'</td>';
+
+           echo '<td>';
+          
+             echo '<a href="invoice.php?id='.$row["user_id"].'" class="btn btn-primary">Invoice</a>';
            
            
          
-           echo '<td> <a href="delete.php?id='.$row["user_id"].'"><span class="glyphicon glyphicon-trash"></span></a></td>';
+           echo '<td> <a href="delete.php?id='.$row["user_id"].'"><span class="glyphicon glyphicon-trash"></span></a>
+</td>';
              
 
            
